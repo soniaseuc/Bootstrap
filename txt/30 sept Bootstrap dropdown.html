@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <!-- Bootstrap v4.5.2     -->
+	<div class="container">
+
+		<div class="row mt-5">
+
+			<div class="col">
+				<h1>Dropdown</h1>
+				<hr>
+
+				<div class="dropright">
+					<div class="btn-group">
+						<button class="btn btn-danger">
+							Botón
+						</button>
+						<button class="btn btn-danger dropdown-toggle dropdown-toggle-split" type="button" data-toggle="dropdown">
+							<span class="sr-only">Menu desplegable</span>
+						</button>
+
+						<div class="dropdown-menu">
+							<a href="#" class="dropdown-item">Enlace 1</a>
+							<a href="#" class="dropdown-item">Enlace 2</a>
+							<a href="#" class="dropdown-item">Enlace 3</a>
+						</div>
+					</div>
+				</div>
+            </div>
+
+            <div class="col">
+				<h1>Dropdown</h1>
+				<hr>
+
+				<div class="dropleft">
+					<div class="btn-group">
+						<button class="btn btn-danger dropdown-toggle dropdown-toggle-split" type="button" data-toggle="dropdown">
+							<span class="sr-only">Menu desplegable</span>
+                        </button>
+                        <button class="btn btn-danger">
+							Botón
+						</button>
+
+						<div class="dropdown-menu">
+							<a href="#" class="dropdown-item">Enlace 1</a>
+							<a href="#" class="dropdown-item">Enlace 2</a>
+							<a href="#" class="dropdown-item">Enlace 3</a>
+						</div>
+					</div>
+				</div>
+            </div>
+            
+            <div class="col">
+				<h1>Dropright</h1>
+				<hr>
+
+				<div class="dropleft">
+					<button class="btn btn-danger dropdown-toggle" type="button" data-toggle="dropdown">
+						Menú desplegable
+					</button>
+
+					<div class="dropdown-menu">
+						<a href="#" class="dropdown-item">Enlace 1</a>
+						<a href="#" class="dropdown-item">Enlace 2</a>
+						<a href="#" class="dropdown-item">Enlace 3</a>
+					</div>
+				</div>
+            </div>
+
+
+        </div>
+
+        <div class="row">
+            
+			<div class="col">
+				<h1>Dropup</h1>
+				<hr>
+
+				<div class="dropup mt-5">
+					<button class="btn btn-danger dropdown-toggle" type="button" data-toggle="dropdown">
+						Menú desplegable
+					</button>
+
+					<div class="dropdown-menu">
+						<h6 class="dropdown-header">Enlaces importantes</h6>
+						<a href="#" class="dropdown-item">Enlace 2</a>
+                        <div class="dropdown-divider"></div>
+                        <h6 class="dropdown-header">lo ultimo</h6>
+						<a href="#" class="dropdown-item">Enlace 3</a>
+					</div>
+				</div>
+			</div>
+        </div>
+        
+
+	</div>
+    
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <!-- Bootstrap v4.5.2     -->
+    <div class="container">
+
+        <div class="row my-5">
+            <div class="col">
+                <h1>Popovers</h1>
+
+                <button style="margin-left: 200px; margin-top: 100px;" type="button" class="btn btn-lg btn-success" data-placement="top" data-toggle="popover" title="titulo de mi popover" data-content="texto que quiero mostrar en mi popover">Mostrar popover</button>
+
+                <button style="margin-left: 200px; margin-top: 100px;" type="button" class="btn btn-lg btn-success" data-placement="left" data-toggle="popover" title="titulo de mi popover" data-content="texto que quiero mostrar en mi popover">Mostrar popover</button>
+
+                <button style="margin-left: 200px; margin-top: 100px;" type="button" class="btn btn-lg btn-success" data-placement="bottom" data-toggle="popover" title="titulo de mi popover" data-content="texto que quiero mostrar en mi popover">Mostrar popover</button>
+
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('[data-toggle="popover"]').popover();
+        });
+    </script>
+</body>
+</html>

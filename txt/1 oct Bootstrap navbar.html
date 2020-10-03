@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <!-- Bootstrap v4.5.2     -->
+    <div class="container">
+
+        <div class="row my-5">
+            <div class="col">
+                <h1>Navs</h1>
+                <hr>
+
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sobre nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contactos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                </ul>
+
+                <hr>
+
+                <nav class="nav flex-column">
+                    <a class="nav-link" href="#">Inicio</a>
+                    <a class="nav-link" href="#">Sobre nosotros</a>
+                    <a class="nav-link" href="#">Productos</a>
+                    <a class="nav-link" href="#">Contactos</a>
+                    <a class="nav-link" href="#">Blog</a>
+                </nav>
+
+                <hr>
+
+                <h1>Tabs y Pills</h1>
+                <hr>
+
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sobre nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contactos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                </ul>
+                <hr>
+
+                <ul class="nav nav-pills nav-fill">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#inicio1" data-toggle="tab">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#nosotros1" data-toggle="tab">Sobre nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#productos1" data-toggle="tab">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto1" data-toggle="tab">Contactos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog1" data-toggle="tab">Blog</a>
+                    </li>
+                </ul>
+
+                <div class="tab-content">
+                    <div class="tab-pane fade show active" id="inicio1">
+                        <h2>Inicio</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisici.</p>
+                    </div>
+                    <div class="tab-pane fade" id="nosotros1">
+                        <h2>Nosotros</h2>
+                        <p>Lorem ipsum dolor </p>
+                    </div>
+                    <div class="tab-pane fade" id="productos1">
+                        <h2>Productos</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad dolorum earum laborum modi, mollitia nisi aperiam autem ipsam porro hic.</p>
+                    </div>
+                    <div class="tab-pane fade" id="contacto1">
+                        <h2>Contacto</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad dolorum earum .</p>
+                    </div>
+                    <div class="tab-pane fade" id="blog1">
+                        <h2>Blog</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad dolorum earum laborum modi, </p>
+                    </div>
+                </div>
+
+                <hr>
+
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sobre nosotros</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Productos</a>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">Enlace</a>
+                            <a href="#" class="dropdown-item">Enlace</a>
+                            <div class="dropdown-divider"></div>
+                            <a href="#" class="dropdown-item">Enlace</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contactos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                </ul>
+
+                <hr>
+
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#inicio" data-toggle="tab">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#nosotros" data-toggle="tab">Sobre nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#productos" data-toggle="tab">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto" data-toggle="tab">Contactos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog" data-toggle="tab">Blog</a>
+                    </li>
+                </ul>
+
+                <div class="tab-content">
+                    <div class="tab-pane fade show active" id="inicio">
+                        <h2>Inicio</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisici.</p>
+                    </div>
+                    <div class="tab-pane fade" id="nosotros">
+                        <h2>Nosotros</h2>
+                        <p>Lorem ipsum dolor </p>
+                    </div>
+                    <div class="tab-pane fade" id="productos">
+                        <h2>Productos</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad dolorum earum laborum modi, mollitia nisi aperiam autem ipsam porro hic.</p>
+                    </div>
+                    <div class="tab-pane fade" id="contacto">
+                        <h2>Contacto</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad dolorum earum .</p>
+                    </div>
+                    <div class="tab-pane fade" id="blog">
+                        <h2>Blog</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad dolorum earum laborum modi, </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row my-5">
+            <div class="col">
+                <h1>NavBar</h1>
+                <hr>
+
+                <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-bottom">
+                    <a href="#" class="navbar-brand">❤</a>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#miMenu">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="miMenu">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link active">Inicio</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Sobre Nosotros</a>
+                                <div class="dropdown-menu">
+                                    <a href="#" class="dropdown-item">class="navbar-expand-lg"</a>
+                                    <a href="#" class="dropdown-item">se usa para decir que a partir de size lg no sale menu burger</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a href="#" class="dropdown-item">class="fixed-top"</a>
+                                    <a href="#" class="dropdown-item">para posicionar navbar arriba</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a href="#" class="dropdown-item">class="fixed-bottom"</a>
+                                    <a href="#" class="dropdown-item">para posicionar navbar abajo</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Contacto</a>
+                            </li>
+                        </ul>
+                        <form class="form-inline">
+                            <input type="text" class="form-control" placeholder="Buscar">
+                            <button class="btn btn-outline-secondary" type="submit">Buscar</button>
+                        </form>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

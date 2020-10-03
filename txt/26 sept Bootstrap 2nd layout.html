@@ -1,0 +1,173 @@
+<!-- body {
+    margin-top: 40px;
+}
+
+.row {
+    margin-bottom: 20px;
+}
+header {
+    background: #bd2130;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.banner {
+    background: #faebdf;
+    padding-bottom: 200px;
+    padding-top: 200px;
+}
+
+.servicios .servicio {
+    background: #bed887;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.sobre-nosotros {
+    background: #fff8dc;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+aside {
+    background: #f0f8ff;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+footer {
+    background: #e9ecef;
+    padding-bottom: 20px;
+    padding-top: 20px;
+} 
+
+p {
+    margin-bottom: 20px;
+}-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+    <!-- col-   < 576px cell
+        col-sm  >=576px
+        col-md  >=768px
+        col-lg  >=992px
+        col-xl  >=1200px -->
+
+    <div class="container">
+        <header class="row">
+            <div class="col">
+                <h1 class="border border-right-0 border-primary">Nombre del sitio</h1>
+            </div>
+        </header>
+
+        <section class="row banner">
+            <div class="col">
+                <h2>Titulo banner</h2>
+                <p>Lorem ipsum, dolor sit amet.</p>
+            </div>
+        </section>
+
+        <section class="row servicios align-items-md-end align-items-lg-center justify-content-center justify-content-lg-around justify-content-xl-between offset-sm-1 offset-lg-5">
+            <div class="servicio col-sm-6 col-md-4 col-lg-3 ">
+                <h3>Titulo servicios 1</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis, commodi? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi, vitae numquam. Explicabo maxime quidem ullam beatae! Dolor enim molestias ex. Tempore ad laborum ipsum rerum est id asperiores, sapiente culpa hic cumque error obcaecati aspernatur officia debitis sed molestiae ab laboriosam veniam? Expedita aspernatur cupiditate laudantium aliquid exercitationem, obcaecati porro quibusdam ex, recusandae in natus, beatae illo similique accusantium sit tempore eos corrupti officiis non neque explicabo ipsum unde quas? Voluptatibus incidunt doloribus beatae quisquam. Libero quaerat temporibus perspiciatis atque explicabo magnam distinctio nesciunt adipisci a, consectetur, non hic dolor ad, esse dolorum eos consequuntur voluptatem voluptas illo deleniti nulla?</p>
+            </div>
+            <div class="servicio col-sm-6 col-md-4 col-lg-3 align-self-end order-3 order-lg-2">
+                <h3>Titulo servicios 2</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis, commodi? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit possimus, veritatis nobis quibusdam ducimus odit consequuntur delectus reprehenderit quisquam vitae.</p>
+            </div>
+            <div class="servicio col-sm-6 col-md-4 col-lg-3 order-2 order-lg-1">
+                <h3>Titulo servicios 3</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis, commodi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quidem voluptate tempore dignissimos accusantium reprehenderit sit provident neque accusamus assumenda, rem perspiciatis aut ducimus? Libero consectetur inventore dolor odio repudiandae voluptates aspernatur? Assumenda sunt aliquam architecto fugiat animi illo, debitis atque ipsam iusto, voluptatibus sit? Doloremque laudantium quo sint voluptatibus?</p>
+            </div>
+            <div class="servicio col-sm-6 col-md-12 col-lg-3 order-1 order-lg-3">
+                <h3>Titulo servicios</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis, commodi?</p>
+            </div>
+        </section>
+
+        <section class="row">
+            <div class="col-md col-lg-9 sobre-nosotros">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut illum magnam corrupti tempore corporis nemo voluptate perspiciatis molestias ullam facilis omnis harum inventore fugiat asperiores, maxime soluta reiciendis beatae blanditiis dignissimos aliquam numquam itaque at voluptates. Minus impedit numquam accusamus! Soluta cum fuga non neque deserunt numquam asperiores, consectetur dicta iusto laboriosam facilis. Dolores dolorem eaque sapiente nostrum soluta reprehenderit? Recusandae culpa consequuntur totam cum unde nulla reiciendis ex est, distinctio voluptatibus ea perferendis possimus magnam quia sit voluptatum quis corporis repudiandae numquam non. Vero nesciunt ratione molestiae tenetur numquam ipsa eius nostrum officia quisquam? Tempora saepe nisi deleniti dignissimos.</p>
+            </div>
+            <aside class="col-md col-lg-3">
+                <ul>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                </ul>
+            </aside>
+        </section>
+
+                <section class="row">
+            <div class="col-md col-lg-9 sobre-nosotros">
+                <div class="row">
+                    <div class="col-6">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, dolore.</p>
+                    </div>
+                    <div class="col">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, dolore.</p>
+                    </div>
+                    <div class="col">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, dolore.</p>
+                    </div>
+                </div>
+            </div>
+            <aside class="col-md col-lg-3">
+                <div class="row">
+                    <div class="col">Lorem, ipsum dolor sit amet.</div>
+                    <div class="col">Lorem, ipsum dolor sit amet.</div>
+                </div>
+            </aside>
+        </section>
+
+        <div class="container">
+    <div class="row">
+        <div class="col">
+            <p class="border border-primary rounded">border-primary</p>
+            <p class="border border-secundary rounded-top">border-secundary</p>
+            <p class="border border-success rounded-bottom">border-success</p>
+            <p class="border border-danger rounded-left">border-danger</p>
+            <p class="border border-warning rounded-right">border-warning</p>
+            <p class="border border-info rounded-circle" style="width: 100px; height: 100px;">border-info</p>
+            <p class="border border-light ">border-light</p>
+            <p class="border border-dark rounded-0">border-dark</p>
+            <p class="border border-white">border-white</p>
+        </div>
+    </div>
+</div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="padre clearfix">
+                    <div class="hijo float-md-right float-lg-left">Izquierda</div>
+                    <div class="hijo float-right">Derecha</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <footer class="row">
+            <div class="col-md-6 col-xl-auto">Todos los derechos reservados</div>
+            <div class="col-md-6 col-xl-auto"><a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a></div>
+        </footer>
+
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

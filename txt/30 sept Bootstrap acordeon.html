@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+    
+    <div class="container">
+
+        <!-- <div class="row mt-5">
+            <div class="col">
+
+                <h1>Collapse</h1>
+
+                <a href="#miContenido" data-toggle="collapse" class="btn btn-primary" role="button">Mostrar/Ocultar</a>
+                
+                <button data-target="#miContenido" data-toggle="collapse" class="btn btn-primary" role="button">Mostrar/Ocultar</button>
+                
+                <button data-target=".variosElementos" data-toggle="collapse" class="btn btn-primary" role="button">Mostrar/Ocultar</button>
+
+                <hr>
+
+                <div class="collapse variosElementos" id="miContenido">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quod rerum deserunt officiis minus eaque adipisci alias quia voluptatibus? Sapiente.
+                            </p>
+                        </div>
+                    </div>                
+                </div>
+
+                <div class="collapse variosElementos" id="miContenid2o">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quod rerum deserunt officiis minus eaque adipisci alias quia voluptatibus? Sapiente.
+                            </p>
+                        </div>
+                    </div>                
+                </div>
+
+                <div class="collapse variosElementos" id="miContenido3">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quod rerum deserunt officiis minus eaque adipisci alias quia voluptatibus? Sapiente.
+                            </p>
+                        </div>
+                    </div>                
+                </div>
+            
+            </div>
+        </div> -->
+        
+        <div class="row mt-5">
+            <div class="col">
+            
+                <div id="miAcordeon">
+                
+                    <div class="card">
+                        <div class="card-header">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#contenido1">1er Content</button>
+                        </div>
+                    </div>
+
+                    <div id="contenido1" class="collapse show" data-parent="#miAcordeon">
+
+                        <div class="card">
+                            <div class="card-body">
+                                clase show hace que se muestre un contenido desde el inicio. 
+                            </div>
+                        </div>
+                    </div>
+                
+                
+                    <div class="card">
+                        <div class="card-header">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#contenido2">2nd Content</button>
+                        </div>
+                    </div>
+
+                    <div id="contenido2" class="collapse" data-parent="#miAcordeon">
+                        <div class="card">
+                            <div class="card-body">
+                                Si no quieres que cierre un card cdo abre otro quitar el data-parent="#miAcordeon".
+                            </div>
+                        </div>
+                    </div>
+                
+                
+                    <div class="card">
+                        <div class="card-header">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#contenido3">3rd Content</button>
+                        </div>
+                    </div>
+
+                    <div id="contenido3" class="collapse" data-parent="#miAcordeon">
+                        <div class="card">
+                            <div class="card-body">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, aperiam id? Libero ipsam dolorum numquam obcaecati excepturi, odio nisi sint!
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+            
+            </div>
+        </div>
+    
+    </div>
+    
+    <script src="../js/jquery.js"></script>
+    <script src="../js/popper.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+</html>

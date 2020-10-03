@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <!-- Bootstrap v4.5.2     -->
+    <div class="container">
+
+        <div class="row my-5">
+            <div class="col">
+                <h1>Tooltip</h1>
+
+                <button class="btn btn-secondary" data-toggle="tooltip" data-html="true" data-placement="right" title="El data-placement es <strong>top</strong> pero puede ser right, left o bottom">
+                    tooltip
+                </button>
+
+            </div>
+        </div>
+
+    </div>
+    
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script> -->
+
+    <script>
+        $(document).ready(function() {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+
+    </script>
+
+</body>
+</html>

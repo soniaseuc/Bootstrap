@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <!-- Bootstrap v4.5.2     -->
+    <div class="container">
+
+        <div class="row my-5">
+            <div class="col">
+                <p class="h1">Modal</p>
+                <hr>
+
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contenidoModal">Mostrar modal</button>
+
+                <div class="modal fade" id="contenidoModal" role="dialog" tabindex="1">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">Titulo modal</h4>
+                                <button type="button" class="close" data-dismiss="modal">
+                                    <span>&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente voluptatem modi officiis commodi vero provident cum qui similique accusantium excepturi.</div>
+                                    <div class="col">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente voluptatem modi officiis commodi vero provident cum qui similique accusantium excepturi.</div>
+                                </div>
+
+                            </div>
+                            <div class="modal-footer">
+                                <a href="#" class="btn btn-primary">Aceptar</a>
+                                <a href="#" class="btn btn-primary" data-dismiss="modal">Cerrar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

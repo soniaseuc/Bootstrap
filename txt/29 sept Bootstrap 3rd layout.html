@@ -1,0 +1,1130 @@
+<!-- body {
+    margin-top: 40px;
+}
+
+.row {
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+.padre {
+    background: blue;
+    padding: 20px;
+}
+
+.hijo {
+    padding: 50px;
+    width: 200px;
+    background: #000;
+    color: #fff;
+    margin: 20px;
+} -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- .d-{valor} para extra-pequeño en adelante
+    .d-{breakpoint}-{valor} para sm, md, lg, y xl
+
+    none
+    inline
+    inline-block
+    block
+    table
+    table-cell
+    flex
+    inline-flex -->
+
+        <div class="row">
+                <div class="col">
+                    <h1>Display</h1>
+
+                    <div>
+                        <h3>Display none</h3>
+                        <p class="d-md-none">solo me veo en dispositivos pequeños</p>
+                        <p class="d-none d-md-block">solo me veo en dispositivos grande</p>
+                        <p class="d-none">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum, ipsa.</p>
+                    </div>
+
+                    <div>
+                        <h3>Display block</h3>
+                        <a href="#" class="bg-primary text-white d-md-block">Lorem ipsum</a>
+                    </div>
+
+                    <div>
+                        <h3>Display inline-block</h3>
+                        <a href="#" class="bg-primary text-white d-inline-block">Lorem ipsum</a>
+                        <a href="#" class="bg-success text-white d-md-block">Lorem ipsum</a>
+                    </div>
+
+                    <div>
+                        <h3>Display flex</h3>
+                        <a href="#" class="bg-primary text-white">Lorem ipsum</a>
+                        <a href="#" class="bg-success text-white">Lorem ipsum</a>
+                        <div class="d-flex">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut, aut.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam libero vel dicta doloribus dolorum. Quo, recusandae ad? Fuga, similique asperiores!</p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+            <div class="row">
+                <div class="col">
+                    <p class="text-primary">.text-primary</p>
+                    <p class="text-secondary">.text-secondary</p>
+                    <p class="text-success">.text-success</p>
+                    <p class="text-danger">.text-danger</p>
+                    <p class="text-warning">.text-warning</p>
+                    <p class="text-info">.text-info</p>
+                    <p class="text-light">.text-light</p>
+                    <p class="text-dark">.text-dark</p>
+                    <p class="text-muted">.text-muted</p>
+                    <p class="text-white bg-dark">.text-white</p>
+                </div>
+            </div>
+        
+        <div class="row">
+            <div class="col">
+                <p><a href="" class="text-primary">link-primary</a></p>
+                <p><a href="" class="text-secondary">link-secondary</a></p>
+                <p><a href="" class="text-success">link-success</a></p>
+                <p><a href="" class="text-danger">link-danger</a></p>
+                <p><a href="" class="text-warning">link-warning</a></p>
+                <p><a href="" class="text-info">link-info</a></p>
+                <p><a href="" class="text-light">link-light</a></p>
+                <p><a href="" class="text-dark">link-dark</a></p>
+                <p><a href="" class="text-muted">link-muted</a></p>
+                <p><a href="" class="bg-dark text-white">link-white</a></p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div class=" bg-primary text-white">link-primary</div>
+                <div class=" bg-secondary text-white">link-secondary</div>
+                <div class=" bg-success text-white">link-success</div>
+                <div class=" bg-danger text-white">link-danger</div>
+                <div class=" bg-danger text-dark">link-warning</div>
+                <div class=" bg-info text-white">link-info</div>
+                <div class=" bg-light text-dark">link-light</div>
+                <div class=" bg-dark text-white">link-dark</div>
+                <div class=" bg-white text-dark">link-white</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 
+21:9 aspect ratio 21 pixeles de ancho por cada 9 pixeles de alto
+<div class="embed-responsive embed-responsive-21by9"></div>
+
+16:9 aspect ratio indica al video que tan alto y ancho en proporcion debe ser
+<div class="embed-responsive embed-responsive-16by9"></div>
+
+4:3 aspect ratio
+<div class="embed-responsive embed-responsive-4by3"></div>
+
+1:1 aspect ratio
+<div class="embed-responsive embed-responsive-1by1"></div>
+-->
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1>Embed</h1>
+
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/_YNEQ1jb-RA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+        <!-- 
+    m - para margin
+    p - para padding
+
+    t - top
+    b - bottom
+    l - left
+    r - right
+    x - left y right
+    y - top y bottom
+
+    0 - for classes that eliminate the margin or padding by setting it to 0
+    1 - .25em
+    2 - .5em
+    3 - 1em
+    4 - 1.5em
+    5 - 3em
+    auto
+    -->
+
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col">
+                <h1>Espacio</h1>
+
+                <p class="bg-primary text-white p-md-4 p-md-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, error.</p>
+                <p class="bg-primary text-white px-4 my-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, error.</p>
+                <p class="bg-primary text-white p-4 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, error.</p>
+                <p class="bg-primary text-white p-4 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, error.</p>
+            </div>
+        </div>
+
+        <div class="row justify-content-between">
+            <div class="col col-auto">
+                <p>Lorem ipsum dolor sit amet</p>
+            </div>
+            
+            <div class="col col-auto ml-auto">
+                <p>Lorem ipsum dolor sit amet</p>
+            </div>
+
+            <div class="col col-auto ">
+                <p>Lorem ipsum dolor</p>
+            </div>
+        </div>
+    </div>
+
+        <!-- 
+    w - 25
+    w - 50
+    w - 75
+    w - 100
+
+    h - 25
+    h - 50
+    h - 75
+    h - 100
+
+    mw- max width y height solo hay 100
+    mh-100 
+    -->
+    
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col">
+                <h1>Tamaño</h1>
+
+                <p class="bg-primary text-white p-md-4 mb-4 w-25">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, labore.</p>
+                <p class="bg-primary text-white p-md-4 mb-4 w-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, labore.</p>
+                <p class="bg-primary text-white p-md-4 mb-4 w-75">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, labore.</p>
+                <p class="bg-primary text-white p-md-4 mb-4 w-100">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, labore.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col" style="height: 600px;">
+                <h1>Tamaño</h1>
+
+                <p class="bg-primary text-white p-md-4 mb-4 d-inline-block mh-100">Lorem ipsum</p>
+                <p class="bg-primary text-white p-md-4 mb-4 d-inline-block h-50">Lorem ipsum</p>
+                <p class="bg-primary text-white p-md-4 mb-4 d-inline-block h-75">Lorem ipsum</p>
+                <p class="bg-primary text-white p-md-4 mb-4 d-inline-block h-100">Lorem ipsum</p>
+            </div>
+        </div>
+    </div>
+
+        
+        <!-- 
+    <div class="position-static"></div>
+    <div class="position-relative"></div>
+    <div class="position-absolute"></div>
+    <div class="position-fixed"></div>
+    <div class="position-sticky"></div> 
+    -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1>Position no es responsive por lo que aplica 
+                    a todos los tamaños de pantalla por eso casi no se usa en html sino
+                    en archivos css</h1>
+                <p class="position-absolute">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, laborum.</p>
+            </div>
+        </div>
+    </div>
+
+        <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1>Utilidades de flexbox</h1>
+                <hr>
+
+                <div>
+                    <h3>Display flex y display inline-flex</h3>
+                    <div class="p-4 bg-primary d-md-flex">
+                        tengo display: flex
+                    </div>
+
+                    <div class="p-4 bg-success d-sm-inline-flex">
+                        tengo display: inline-flex
+                    </div>
+                </div>
+
+                <hr>
+
+                <div>
+                    <h3>Direccion</h3>
+                    <div class="d-flex p-4 text-white flex-column-reverse flex-md-row">
+                        <p class="bg-primary mx-3 p-2">1Lorem ipsum dolor</p>
+                        <p class="bg-primary mx-3 p-2">2Lorem ipsum dolor</p>
+                        <p class="bg-primary mx-3 p-2">3Lorem ipsum dolor</p>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div>
+                    <h3>Justify content</h3>
+                    <div class="d-flex p-4 text-white justify-content-md-end justify-content-sm-center">
+                        <p class="bg-primary mx-3 p-2">Lorem ipsum dolor</p>
+                        <p class="bg-primary mx-3 p-2">Lorem ipsum dolor</p>
+                        <p class="bg-primary mx-3 p-2">Lorem ipsum dolor</p>
+                    </div>
+                </div>
+                <hr>
+
+                <div>
+                    <h3>Align items y align self</h3>
+                    <div class="d-flex p-4 text-white align-items-md-end" style="height: 500px;">
+                        <p class="bg-primary mx-3 p-2">Lorem ipsum dolor</p>
+                        <p class="bg-primary mx-3 p-2 align-self-center">Lorem ipsum dolor</p>
+                        <p class="bg-primary mx-3 p-2">Lorem ipsum dolor</p>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div>
+                    <h3>Wrap</h3>
+                    <div class="d-flex p-4 text-white flex-md-wrap flex-sm-nowrap">
+                        <p class="bg-primary mx-3 p-2">Lorem ipsum dolor</p>
+                        <p class="bg-primary mx-3 p-2">Lorem ipsum dolor</p>
+                        <p class="bg-primary mx-3 p-2">Lorem ipsum dolor</p>
+                        <p class="bg-primary mx-3 p-2">Lorem ipsum dolor</p>
+                        <p class="bg-primary mx-3 p-2">Lorem ipsum dolor</p>
+                        <p class="bg-primary mx-3 p-2">Lorem ipsum dolor</p>
+                        <p class="bg-primary mx-3 p-2">Lorem ipsum dolor</p>
+                        <p class="bg-primary mx-3 p-2">Lorem ipsum dolor</p>
+                        <p class="bg-primary mx-3 p-2">Lorem ipsum dolor</p>
+                        <p class="bg-primary mx-3 p-2">Lorem ipsum dolor</p>
+                        <p class="bg-primary mx-3 p-2">Lorem ipsum dolor</p>
+                        <p class="bg-primary mx-3 p-2">Lorem ipsum dolor</p>
+                        <p class="bg-primary mx-3 p-2">Lorem ipsum dolor</p>
+                        <p class="bg-primary mx-3 p-2">Lorem ipsum dolor</p>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div>
+                    <h3>Order</h3>
+                    <div class="d-flex p-4 text-white">
+                        <p class="bg-primary mx-3 p-2 order-1">1</p>
+                        <p class="bg-primary mx-3 p-2 order-3">2</p>
+                        <p class="bg-primary mx-3 p-2 order-2">3</p>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div>
+                    <h3>Align content</h3>
+                    <div class="d-flex p-4 text-white flex-wrap align-content-md-end" style="height: 600px;">
+                        <p class="bg-primary mx-3 p-2">Lorem ipsum dolor</p>
+                        <p class="bg-primary mx-3 p-2">Lorem ipsum dolor</p>
+                        <p class="bg-primary mx-3 p-2">Lorem ipsum dolor</p>
+                        <p class="bg-primary mx-3 p-2">Lorem ipsum dolor</p>
+                        <p class="bg-primary mx-3 p-2">Lorem ipsum dolor</p>
+                        <p class="bg-primary mx-3 p-2">Lorem ipsum dolor</p>
+                        <p class="bg-primary mx-3 p-2">Lorem ipsum dolor</p>
+                        <p class="bg-primary mx-3 p-2">Lorem ipsum dolor</p>
+                        <p class="bg-primary mx-3 p-2">Lorem ipsum dolor</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+        <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1>Encabezado h1 <small class="text-muted">Texto mas pequeño</small></h1>
+                <h2>Encabezado h2 <small class="text-muted">Texto mas pequeño</small></h2>
+                <h3>Encabezado h3 <small class="text-muted">Texto mas pequeño</small></h3>
+                <h4>Encabezado h4 <small class="text-muted">Texto mas pequeño</small></h4>
+                <h5>Encabezado h5 <small class="text-muted">Texto mas pequeño</small></h5>
+                <h6>Encabezado h6 <small class="text-muted">Texto mas pequeño</small></h6>
+                
+                <hr>
+
+                <p class="h1">Soy un parrafo con estilo de H1</p>
+                <p class="h2">Soy un parrafo con estilo de H2</p>
+                <p class="h3">Soy un parrafo con estilo de H3</p>
+                <p class="h4">Soy un parrafo con estilo de H4</p>
+                <p class="h5">Soy un parrafo con estilo de H5</p>
+                <p class="h6">Soy un parrafo con estilo de H6</p>
+
+                <hr>
+
+                <h1 class="display-1">Display 1</h1>
+                <h1 class="display-2">Display 2</h1>
+                <h1 class="display-3">Display 3</h1>
+                <h1 class="display-4">Display 4</h1>
+
+                <hr>
+
+                <p class="lead">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, iusto?
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+        <div class="container">
+
+        <div class="row mt-4">
+            <div class="col">
+                <p>Lorem<mark>ipsum</mark>dolor sit amet.</p>
+                <p>Lorem <del>ipsum</del> dolor <s>sit</s> amet.</p>
+                <p>Lorem <ins>ipsum</ins> dolor <u>sit</u> amet.</p>
+                <p>Lorem <small>ipsum</small> dolor sit amet.</p>
+                <p>Lorem <strong>ipsum</strong> dolor sit amet.</p>
+                <p>Lorem <em>ipsum</em> dolor sit amet.</p>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col">
+                <p class="text-right text-lg-center text-capitalize">Lorem<mark>ipsum</mark>dolor sit amet.</p>
+                <p class="text-right text-uppercase">Lorem <del>ipsum</del> dolor <s>sit</s> .</p>
+                <p class="text-center text-lowercase">Lorem <ins>ipsum</ins> dolor <u>sit</u> amet.</p>
+
+                <p class="text-justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga inventore mollitia maiores laborum! Ab voluptatum, omnis adipisci similique, deserunt reprehenderit error dolore aut, odit blanditiis dignissimos. In aperiam vitae consequatur assumenda? Numquam aut ad dignissimos incidunt sequi laudantium repudiandae enim non ducimus sit culpa quidem magni, suscipit commodi aspernatur doloremque dolor. Nostrum, excepturi asperiores ducimus possimus repellat voluptatibus voluptates ut exercitationem quae iusto eos veniam distinctio! Doloribus asperiores exercitationem recusandae ratione, vero, quasi ipsa hic laudantium quod, sint veniam molestias explicabo nesciunt dolore non adipisci eos odio deleniti nisi. Doloremque praesentium ratione ut eos qui animi quam deserunt necessitatibus odit reprehenderit, rerum consequuntur et impedit voluptatum obcaecati rem dignissimos omnis accusamus ad beatae aut quisquam magni amet? Sapiente, voluptatum at voluptates rerum cum alias maiores optio eius libero autem adipisci, similique illo inventore. Ea minus magni totam consequuntur voluptatum ab, quaerat odio eius? Nulla, unde itaque nostrum consequuntur debitis eius porro quae quo ad, similique voluptatum excepturi quasi eos delectus facere fugit sed provident sapiente, repellat culpa dolores est dignissimos quos accusantium. Reprehenderit, eligendi neque. Minima itaque corporis pariatur fuga deserunt veritatis error voluptates dolore suscipit id atque autem et eligendi quasi doloribus voluptas iusto exercitationem, fugit nesciunt quos cupiditate!</p>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col">
+                <p class="text-right text-lg-center text-capitalize font-weight-bold">Lorem<mark>ipsum</mark> amet.</p>
+                <p class="text-right text-uppercase font-weight-normal">Lorem <del>ipsum</del> dolor <s>sit</s> .</p>
+                <p class="text-center text-lowercase font-italic">Lorem <ins>ipsum</ins> dolor <u>sit</u> amet.</p>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col">
+                <blockquote class="blockquote">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, assumenda.</p>
+                    <footer class="blockquote-footer">Hecho por Z</footer>
+                </blockquote>
+            </div>
+        </div>
+    </div>
+
+        <div class="container mt-4">
+        <div class="row">
+            <div class="col">
+                <h3>Codigo</h3>
+                <p>Lorem ipsum <code>&lt;strong&gt;</code> dolor sit amet consectetur adipisicing elit. Suscipit deleniti nam id eaque. Sit eius quae beatae in, ut deserunt unde sunt architecto ipsam, aliquid, voluptas id consequuntur nobis vero voluptatum nisi perspiciatis laborum quo omnis amet minima consectetur quam placeat! Unde a iusto blanditiis? Error architecto qui rem quidem aperiam itaque voluptatibus placeat nihil obcaecati, ipsa dolorum fugit eum cumque mollitia illo impedit ullam! Iste, voluptas natus mollitia ut quisquam a vero ipsam magnam exercitationem sit doloremque quia ipsum et doloribus repellat debitis dolores quibusdam sint ratione nihil eligendi dolorem nesciunt. Voluptas eligendi cumque voluptatibus eveniet alias voluptate quidem.</p>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, dicta.</p>
+<pre>
+&ltdiv class="container"&gt
+    &ltdiv class="row"&gt
+        &ltdiv class="col"&gt
+        &lt/div&gt
+    &lt/div&gt
+&lt/div&gt
+</pre>
+            <p>Lorem ipsum dolor sit amet: <kbd>CTRL</kbd> + <kbd>;</kbd></p>
+<pre>
+    <code> <input type="password" undefined placeholder="&lt;div&gt;&lt;/div&gt;"> </code>
+</pre>
+
+            </div>
+        </div>
+    </div>
+
+        <div class="container mt-4">
+        <div class="row">
+            <div class="col">
+
+                <h1>Imagenes</h1>
+
+                <div class="row">
+                    <div class="col-3">
+                        <img class="img-fluid rounded" src="../img/bolso1.jpeg" alt="">
+                    </div>
+
+                    <div class="col-6">
+                        <p>Lorem ipsum <code>&lt;strong&gt;</code> dolor sit amet consectetur adipisicing elit. Suscipit deleniti nam id eaque. Sit eius quae beatae in, ut deserunt unde sunt architecto ipsam, aliquid, voluptas id consequuntur nobis vero voluptatum nisi perspiciatis laborum quo omnis amet minima consectetur quam placeat! </p>
+                    </div>
+                    <div class="col-3">
+                        <img class="img-fluid img-thumbnail rounded" src="../img/bolso1.jpeg" alt="">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-3">
+                        <figure class="figure">
+                            <img class="img-fluid" src="../img/bolso1.jpeg" alt="">
+                            <figcaption class="figure-caption">bolso de campamento</figcaption>
+                        </figure>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+        <div class="container mt-4">
+        <div class="row">
+            <div class="col">
+                <h1>Tablas</h1>
+                <table class="table table-bordered table-hover table-sm table-responsive-md">
+                    <thead class="">
+                        <tr>
+                            <th>#</th>
+                            <th>Nombre</th>
+                            <th>Pais</th>
+                            <th>Edad</th>
+                            <th>#</th>
+                            <th>Nombre</th>
+                            <th>Pais</th>
+                            <th>Edad</th>
+                            <th>#</th>
+                            <th>Nombre</th>
+                            <th>Pais</th>
+                            <th>Edad</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="table-danger">1</td>
+                            <td>Olivia</td>
+                            <td>Mexico</td>
+                            <td>20</td>
+                            <td>1</td>
+                            <td>Olivia</td>
+                            <td>Mexico</td>
+                            <td>20</td>
+                            <td>1</td>
+                            <td>Olivia</td>
+                            <td>Mexico</td>
+                            <td>20</td>
+                        </tr>
+                        <tr class="table-success">
+                            <td>2</td>
+                            <td>Sonia</td>
+                            <td>Cuba</td>
+                            <td>32</td>
+                            <td>2</td>
+                            <td>Sonia</td>
+                            <td>Cuba</td>
+                            <td>32</td>
+                            <td>2</td>
+                            <td>Sonia</td>
+                            <td>Cuba</td>
+                            <td>32</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Milay</td>
+                            <td>España</td>
+                            <td class="table-dark">27</td>
+                            <td>3</td>
+                            <td>Milay</td>
+                            <td>España</td>
+                            <td>27</td>
+                            <td>3</td>
+                            <td>Milay</td>
+                            <td>España</td>
+                            <td >27</td>
+                        </tr>
+                        <tr class="table-primary">
+                            <td >4</td>
+                            <td>Olivia</td>
+                            <td>Mexico</td>
+                            <td>20</td>
+                            <td >4</td>
+                            <td>Olivia</td>
+                            <td>Mexico</td>
+                            <td>20</td>
+                            <td >4</td>
+                            <td>Olivia</td>
+                            <td>Mexico</td>
+                            <td>20</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col">
+                <h1>Tablas</h1>
+                <table class="table table-dark table-striped table-hover">
+                    <thead class="thead-light">
+                        <tr>
+                            <th>#</th>
+                            <th>Nombre</th>
+                            <th>Pais</th>
+                            <th>Edad</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr >
+                            <td>1</td>
+                            <td>Sonia</td>
+                            <td>Cuba</td>
+                            <td>32</td>
+                        </tr>
+                        <tr >
+                            <td>2</td>
+                            <td>Milay</td>
+                            <td>España</td>
+                            <td>27</td>
+                        </tr>
+                        <tr >
+                            <td>3</td>
+                            <td>Olivia</td>
+                            <td>Mexico</td>
+                            <td>20</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+        <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1>Media Object</h1>
+                <div class="media">
+                    <img class="mr-3" src="../img/bolso1.jpeg" alt="" width="64px" height= "auto">
+                    <div class="media-body">
+                        <h5>Sonia Seuc</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae reprehenderit consequatur accusamus vero ut debitis suscipit iure sit odit officiis!</p>
+
+                        <div class="media border-top">
+                            <img class="mr-3" src="../img/bolso1.jpeg" alt="" width="64px" height= "auto">
+                            <div class="media-body">
+                                <h5>Julia Sus</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae reprehenderit consequatur accusamus vero ut debitis suscipit iure sit odit!</p>
+                            </div>
+                        </div>
+                        <div class="media border-top">
+                            <img class="mr-3 align-self-center" src="../img/bolso1.jpeg" alt="" width="64px" height= "auto">
+                            <div class="media-body">
+                                <h5>Julia Sus</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae reprehenderit consequatur accusamus vero ut debitis suscipit iure sit odit!</p>
+                            </div>
+                        </div>
+                        <div class="media border-top">
+                            <img class="mr-3" src="../img/bolso1.jpeg" alt="" width="64px" height= "auto">
+                            <div class="media-body">
+                                <h5>Julia Sus</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae reprehenderit consequatur accusamus vero ut debitis suscipit iure sit odit!</p>
+                            </div>
+                        </div>
+                        <div class="media border-top">
+                            <img class="mr-3" src="../img/bolso1.jpeg" alt="" width="64px" height= "auto">
+                            <div class="media-body">
+                                <h5>Julia Sus</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae reprehenderit consequatur accusamus vero ut debitis suscipit iure sit odit!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <div class="container">
+
+        <div class="row">
+            <div class="col">
+                <h1>Alertas</h1>
+
+                <div class="alert alert-primary alert-dismissible fade show" role="alert">
+                    <h4 class="alert-heading">Mensaje Importante</h4>
+                    Lorem ipsum dolor sit amet, <a class="alert-link" href="#">consectetur adipisicing</a> elit. Consequuntur, excepturi?
+
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Cerrar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div> 
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col">
+
+                <div class="alert alert-secondary" role="alert">
+                    <h4 class="alert-heading">Mensaje Importante</h4>
+                    Lorem ipsum dolor sit amet, <a href="#">consectetur adipisicing</a> elit. Consequuntur, excepturi?
+                </div>
+
+                <div class="alert alert-success" role="alert">
+                    <h4 class="alert-heading">Mensaje Importante</h4>
+                    Lorem ipsum dolor sit amet, <a class="alert-link" href="#">consectetur adipisicing</a> elit. Consequuntur, excepturi?
+                </div>
+
+                <div class="alert alert-danger" role="alert">
+                    <h4 class="alert-heading">Mensaje Importante</h4>
+                    Lorem ipsum dolor sit amet, <a class="alert-link" href="#">consectetur adipisicing</a> elit. Consequuntur, excepturi?
+                </div>
+
+                <div class="alert alert-warning" role="alert">
+                    <h4 class="alert-heading">Mensaje Importante</h4>
+                    Lorem ipsum dolor sit amet, <a class="alert-link" href="#">consectetur adipisicing</a> elit. Consequuntur, excepturi?
+                </div>
+
+                <div class="alert alert-info" role="alert">
+                    <h4 class="alert-heading">Mensaje Importante</h4>
+                    Lorem ipsum dolor sit amet, <a class="alert-link" href="#">consectetur adipisicing</a> elit. Consequuntur, excepturi?
+                </div>
+
+                <div class="alert alert-light" role="alert">
+                    <h4 class="alert-heading">Mensaje Importante</h4>
+                    Lorem ipsum dolor sit amet, <a class="alert-dark" href="#">consectetur adipisicing</a> elit. Consequuntur, excepturi?
+                </div>
+
+                <div class="alert alert-dark" role="alert">
+                    <h4 class="alert-heading">Mensaje Importante</h4>
+                    Lorem ipsum dolor sit amet, <a class="" href="#">consectetur adipisicing</a> elit. Consequuntur, excepturi?
+                </div>
+
+                <div class="alert" >
+                    <h4 class="alert-heading">Mensaje Importante</h4>
+                    Lorem ipsum dolor sit amet, <a class="alert-link" href="#">consectetur adipisicing</a> elit. Consequuntur, excepturi?
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+        <div class="container">
+
+        <div class="row">
+            <div class="col-6">
+                <p class="h1">Badges o insignia</p>
+                <hr>
+
+                <div class="row mt-2 mb-2">
+                    <div class="col">
+                        <a href="#" class="btn btn-primary">Notificaciones <span class="badge badge-pill badge-light">4</span></a>
+                    </div>
+                </div>
+
+                <div class="row mt-2 mb-2">
+                    <div class="col">
+                        <a href="#" class="btn btn-danger">Notificaciones <span class="badge badge-pill badge-primary">4</span></a>
+                    </div>
+                </div>
+
+                <hr>
+
+                <h1>encabezado <span class="badge badge-primary">Badge</span></h1>
+                <h2>encabezado de ejemplo <span class="badge badge-primary">Badge</span></h2>
+                <h3>encabezado de ejemplo <span class="badge badge-primary">Badge</span></h3>
+                <h4>encabezado de ejemplo <span class="badge badge-primary">Badge</span></h4>
+                <h5>encabezado de ejemplo <span class="badge badge-primary">Badge</span></h5>
+                <h6>encabezado de ejemplo <span class="badge badge-primary">Badge</span></h6>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row mt-2">
+            <div class="col-6">
+                <p >encabezado de ejemplo <span class="badge badge-primary">Badge</span></p>
+                <p >encabezado de ejemplo <span class="badge badge-secondary">Badge</span></p>
+                <p >encabezado de ejemplo <span class="badge badge-success">Badge</span></p>
+                <p >encabezado de ejemplo <span class="badge badge-danger">Badge</span></p>
+                <p >encabezado de ejemplo <span class="badge badge-warning">Badge</span></p>
+                <p >encabezado de ejemplo <span class="badge badge-info">Badge</span></p>
+                <p >encabezado de ejemplo <span class="badge badge-light">Badge</span></p>
+                <p >encabezado de ejemplo <span class="badge badge-dark">Badge</span></p>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row mt-2">
+            <div class="col-6">
+                <p >badge tipo pill <span class="badge badge-pill badge-primary">Badge</span></p>
+                <p >badge tipo pill <span class="badge badge-pill badge-secondary">Badge</span></p>
+                <p >badge tipo pill <span class="badge badge-pill badge-success">Badge</span></p>
+                <p >badge tipo pill <span class="badge badge-pill badge-danger">Badge</span></p>
+                <p >badge tipo pill <span class="badge badge-pill badge-warning">Badge</span></p>
+                <p >badge tipo pill <span class="badge badge-pill badge-info">Badge</span></p>
+                <p >badge tipo pill <span class="badge badge-pill badge-light">Badge</span></p>
+                <p >badge tipo pill <span class="badge badge-pill badge-dark">Badge</span></p>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row mt-2">
+            <div class="col-6">
+                <p >badge con anchor <a href="#" class="badge badge-pill badge-primary">Badge</a></p>
+                <p >badge con anchor <a href="#" class="badge badge-pill badge-secondary">Badge</a></p>
+                <p >badge con anchor <a href="#" class="badge badge-pill badge-success">Badge</a></p>
+                <p >badge con anchor <a href="#" class="badge badge-pill badge-danger">Badge</a></p>
+                <p >badge con anchor <a href="#" class="badge badge-pill badge-warning">Badge</a></p>
+                <p >badge con anchor <a href="#" class="badge badge-pill badge-info">Badge<a></p>
+                <p >badge con anchor <a href="#" class="badge badge-pill badge-light">Badge<a></p>
+                <p >badge con anchor <a href="#" class="badge badge-pill badge-dark">Badge<a></p>
+            </div>
+        </div>
+
+    </div>
+
+        <div class="container">
+
+        <div class="row">
+            <div class="col">
+                <p class="h1">Botones</p>
+                <hr>
+
+                <button type="button" class="btn btn-primary">primary</button>
+                <button type="button" class="btn btn-secondary">secondary</button>
+                <button type="button" class="btn btn-success">success</button>
+                <button type="button" class="btn btn-warning">warning</button>
+                <button type="button" class="btn btn-danger">danger</button>
+                <button type="button" class="btn btn-info">info</button>
+                <button type="button" class="btn btn-light">light</button>
+                <button type="button" class="btn btn-dark">dark</button>
+
+                <hr>
+
+                <a class="btn btn-primary" href="#">link</a>
+                <input type="submit" value="Enviar" class="btn btn-info">
+
+                <hr>
+
+                <button type="button" class="btn btn-outline-primary">primary</button>
+                <button type="button" class="btn btn-outline-secondary">secondary</button>
+                <button type="button" class="btn btn-outline-success">success</button>
+                <button type="button" class="btn btn-outline-warning">warning</button>
+                <button type="button" class="btn btn-outline-danger">danger</button>
+                <button type="button" class="btn btn-outline-info">info</button>
+                <button type="button" class="btn btn-outline-light">light</button>
+                <button type="button" class="btn btn-outline-dark">dark</button>
+
+                <hr>
+
+                <button type="button" class="btn btn-primary btn-lg">primary</button>
+                <button type="button" class="btn btn-secondary">secondary</button>
+                <button type="button" class="btn btn-success btn-sm">success</button>
+
+                <hr>
+
+                <button type="button" class="btn btn-warning btn-block btn-lg">warning</button>
+                <button type="button" class="btn btn-danger">danger</button>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row mt-3 mb-3">
+            <div class="col">
+                <button type="button" class="btn btn-primary active">active</button>
+                <button type="button" class="btn btn-primary">no active</button>
+
+                <hr>
+
+                <button type="button" class="btn btn-primary" disabled>disabled</button>
+                <button type="button" class="btn btn-danger" disabled>no active</button>
+
+                <a href="#" class="btn btn-success disabled">link desactivado</a>
+
+                <hr>
+
+                <button type="button" class="btn btn-link" disabled>button link</button>
+                <button type="button" class="btn btn-link" >enlace</button>
+
+                <hr>
+
+                <button type="button" class="btn btn-danger" >normal</button>
+                <button type="button" class="btn btn-danger" data-toggle="button">toggle</button>
+                <button type="button" class="btn btn-danger" disabled>disabled</button>
+            </div>
+        </div>
+    </div>
+
+        <div class="container">
+
+        <div class="row">
+            <div class="col">
+                <h1>Grupos de botones</h1>
+
+                <div class="btn-toolbar">
+                    <div class="btn-group mr-2">
+                        <button class="btn btn-secondary" type="button">Izquierda</button>
+                        <button class="btn btn-secondary" type="button">Centro</button>
+                        <button class="btn btn-secondary" type="button">Derecha</button>
+                    </div>
+                    <div class="btn-group mr-2">
+                        <button class="btn btn-secondary" type="button">1</button>
+                        <button class="btn btn-secondary" type="button">2</button>
+                        <button class="btn btn-secondary" type="button">3</button>
+                    </div>
+                    <div class="btn-group">
+                        <button class="btn btn-secondary" type="button">btn</button>
+                        <button class="btn btn-secondary" type="button">btn</button>
+                        <button class="btn btn-secondary" type="button">btn</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col">
+                <div class="btn-group btn-group-sm mr-2">
+                    <button class="btn btn-primary" type="button">Izquierda</button>
+                    <button class="btn btn-primary" type="button">Centro</button>
+                    <button class="btn btn-primary" type="button">Derecha</button>
+                    <button class="btn btn-primary" type="button">Derecha</button>
+                </div>
+                <div class="btn-group btn-group-lg mr-2">
+                    <button class="btn btn-primary" type="button">Izquierda</button>
+                    <button class="btn btn-primary" type="button">Centro</button>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col">
+                <div class="btn-group-vertical btn-group-sm mr-2">
+                    <button class="btn btn-primary" type="button">Izquierda</button>
+                    <button class="btn btn-primary" type="button">Centro</button>
+                    <button class="btn btn-primary" type="button">Derecha</button>
+                </div>
+                <div class="btn-group btn-group-lg mr-2">
+                    <button class="btn btn-primary" type="button">Izquierda</button>
+                    <button class="btn btn-primary" type="button">Centro</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+        <div class="container">
+
+        <div class="row mt-5">
+            <div class="col-4">
+                <h1>cards</h1>
+                <hr>
+                <div class="card">
+                    <img src="../img/bolso1.jpeg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Titulo Tarjeta</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, ipsa!</p>
+                        <a href="#" class="btn btn-primary">boton</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div class="card">                    
+                    <div class="card-body">
+                        <h5 class="card-title">Titulo Tarjeta</h5>
+                        <h6 class="card-subtitle text-muted mb-2">Subtitulo</h6>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, ipsa!</p>
+                        <a href="#" class="card-link">enlace</a>
+                        <a href="#" class="card-link">enlace</a>
+                    </div>
+                    <img src="img/bolso1.jpeg" class="card-img-bottom" alt="">
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div class="card border-danger text-danger">
+                    <h3 class="card-header">
+                        Lorem, ipsum.
+                    </h3>          
+                    <div class="card-body">
+                        <h5 class="card-title">Titulo Tarjeta</h5>
+                        <h6 class="card-subtitle text-muted mb-2">Subtitulo</h6>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, ipsa!</p>
+                        <a href="#" class="card-link">enlace</a>
+                        <a href="#" class="card-link">enlace</a>
+                    </div>
+                    <div class="card-footer">
+                        Lorem, ipsum.
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="card bg-primary text-white">
+                    <h3 class="card-header">
+                        Lorem, ipsum.
+                    </h3>          
+                    <div class="card-body">
+                        <h5 class="card-title">Titulo Tarjeta</h5>
+                        <h6 class="card-subtitle text-muted mb-2">Subtitulo</h6>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, ipsa!</p>
+                        <a href="#" class="card-link">enlace</a>
+                        <a href="#" class="card-link">enlace</a>
+                    </div>
+                    <div class="card-footer">
+                        Lorem, ipsum.
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="card bg-dark text-white">
+                    <h3 class="card-header">
+                        Lorem, ipsum.
+                    </h3>          
+                    <div class="card-body">
+                        <h5 class="card-title">Titulo Tarjeta</h5>
+                        <h6 class="card-subtitle text-muted mb-2">Subtitulo</h6>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, ipsa!</p>
+                        <a href="#" class="card-link">enlace</a>
+                        <a href="#" class="card-link">enlace</a>
+                    </div>
+                    <div class="card-footer">
+                        Lorem, ipsum.
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+        <div class="container">
+        <div class="row mt-5">
+            <div class="col">
+
+                <div class="card-columns">
+
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem, ipsum.</h5>
+                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, reiciendis?</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-header">
+                            Lorem, ipsum dolor.
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem, ipsum.</h5>
+                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, reiciendis?</p>
+                        </div>
+                        <div class="card-footer">
+                            Lorem, ipsum dolor.
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            Lorem, ipsum dolor.
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem, ipsum.</h5>
+                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, reiciendis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, necessitatibus?</p>
+                        </div>
+                        <div class="card-footer">
+                            Lorem, ipsum dolor.
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            Lorem, ipsum dolor.
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem, ipsum.</h5>
+                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, reiciendis?</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            Lorem, ipsum dolor.
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem, ipsum.</h5>
+                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, reiciendis?</p>
+                        </div>
+                        <div class="card-footer">
+                            Lorem, ipsum dolor.
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            Lorem, ipsum dolor.
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem, ipsum.</h5>
+                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, reiciendis? Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem, ipsum.</h5>
+                            <p class="card-text">Lorem ipsum dolor, sit amet </p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem, ipsum.</h5>
+                            <p class="card-text">Lorem ipsum dolor, sit amet </p>
+                        </div>
+                        <div class="card-footer">
+                            Lorem, ipsum dolor. Lorem ipsum dolor sit amet.
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+    <script src="../js/jquery.js"></script>
+    <script src="../js/popper.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+</html>
