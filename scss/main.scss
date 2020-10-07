@@ -1,4 +1,21 @@
-
+$primary: red;
+$secondary: yellow;
 
 // Bootstrap 4.5.2
 @import '../bootstrap/scss/bootstrap.scss';
+
+body {
+    background: black;
+
+    h1 {
+        color: $primary;
+
+        span {
+            color: $secondary;
+
+            strong {
+                text-transform: uppercase;
+            }
+        }
+    }
+}
